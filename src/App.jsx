@@ -16,7 +16,8 @@ function App() {
   function addToCart(book, num) {
     if (book && num) {
       const duplicate = cart.find((element) => element.id === book.id);
-      setCart(cart.map((element) => element.id === duplicate.id ? {...element, quantity: num} : {...element}))
+      const nonNegative = num < 0 ? num * -1 : num;
+      setCart(cart.map((element) => element.id === duplicate.id ? {...element, quantity: nonNegative} : {...element}))
     }
     else {
       const duplicate = cart.find((element) => element.id === book.id);
