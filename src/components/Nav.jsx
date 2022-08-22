@@ -29,7 +29,7 @@ class Nav extends React.Component {
           </Link>
           <ul className="nav__links">
             <li className="nav__list">
-              <Link to="/" className="nav__link">Home</Link>
+              <Link to="/reactjs-library/" className="nav__link">Home</Link>
             </li>
             <li className="nav__list">
               <Link to="/books" className="nav__link">Books</Link>
@@ -51,7 +51,7 @@ class Nav extends React.Component {
             </button>
             <ul className="menu__links">
               <li className="menu__list">
-                <Link to="/" className="menu__link">Home</Link>
+                <Link to="/reactjs-library/" className="menu__link">Home</Link>
               </li>
               <li className="menu__list">
                 <Link to="/books" className="menu__link">Books</Link>

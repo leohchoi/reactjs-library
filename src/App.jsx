@@ -66,7 +66,7 @@ function App() {
         <Nav totalItems={totalItems()}/> 
         {/* using () without => since we want it to run 24/7.*/}
         <Routes>
-          <Route path='/' exact 
+          <Route path='/reactjs-library/'  
            element={<Home />}/>
           <Route path='/books' exact 
            element={<Books book={books}/>}/>
